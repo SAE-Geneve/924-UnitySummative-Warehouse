@@ -8,7 +8,7 @@ Ajouter tous les éléements nécessaires au fonctionnement du jeu
 - Utilisez le composant/script **BoxCatcher** pour attraper et déposer les cartons. 
 - Ajouter un **élement d'interface** permettant de compter les cartons collectées.
 - Les boites distribuées ne doivent pas avoir la meme taille. **Utilisez les prefabs** appropriés
-![Description du script BoxCatcher](img.png)
+![Description du script BoxCatcher]((https://excalidraw.com/#json=Jix34Uns4lQDH7htZJdl7,aBrzGugJ73fiUEM2Li6_sg))
 
 - Ajoute une des features suivantes :
   - GamePlay : scoring en temps limité
