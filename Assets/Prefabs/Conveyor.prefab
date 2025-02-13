@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5303416298913488072}
+  - component: {fileID: 6954722910316125632}
+  - component: {fileID: 8473621298138913677}
   m_Layer: 0
   m_Name: Conveyor
   m_TagString: Conveyor
@@ -34,6 +36,46 @@ Transform:
   - {fileID: 1040341806041980021}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &6954722910316125632
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947072971624635122}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 0.41204798, z: 2.6281667}
+  m_Center: {x: 0, y: 0.21861124, z: 0.81408334}
+--- !u!114 &8473621298138913677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5947072971624635122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90a1f407839b4da43bd90ca4b96a4d36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boxes:
+  - {fileID: 7974535970875274906, guid: 0404dca2e1568cf41aa96506d338a23c, type: 3}
+  - {fileID: 1415525279268978220, guid: ba5818f6694d5fb408f51a8a3d23a384, type: 3}
+  - {fileID: 3415096651110712140, guid: 326ce6f439b868a4aabf053e69676b63, type: 3}
+  - {fileID: 3415096651110712140, guid: 308a713c6b9cd224da6bda42bbcdeea1, type: 3}
+  spawnPoint: {fileID: 5092121398787589805}
+  spawnTime: 15
 --- !u!1 &6732004240971252646
 GameObject:
   m_ObjectHideFlags: 0

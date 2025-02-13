@@ -56,6 +56,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxWide
       objectReference: {fileID: 0}
+    - target: {fileID: 3666950065246038800, guid: 7091e50ec94ca554a878fe1fd70ef218, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5315287
+      objectReference: {fileID: 0}
+    - target: {fileID: 3666950065246038800, guid: 7091e50ec94ca554a878fe1fd70ef218, type: 3}
+      propertyPath: m_Size.z
+      value: 1.0241623
+      objectReference: {fileID: 0}
+    - target: {fileID: 3666950065246038800, guid: 7091e50ec94ca554a878fe1fd70ef218, type: 3}
+      propertyPath: m_Center.y
+      value: 0.2522291
+      objectReference: {fileID: 0}
+    - target: {fileID: 3666950065246038800, guid: 7091e50ec94ca554a878fe1fd70ef218, type: 3}
+      propertyPath: m_Center.z
+      value: -0.0039405823
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6431247872273585125, guid: 7091e50ec94ca554a878fe1fd70ef218, type: 3}
