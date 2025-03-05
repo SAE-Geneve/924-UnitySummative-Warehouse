@@ -5,6 +5,13 @@ public class Collector : MonoBehaviour
 {
     
     private int collectedBoxesCount = 0;
+
+    [SerializeField] private UIManager uIManager;
+    
+    void Start()
+    {
+        
+    }
     
     private void OnCollisionEnter(Collision other)
     {
@@ -12,6 +19,11 @@ public class Collector : MonoBehaviour
         {
             Destroy(box.gameObject);
             collectedBoxesCount++;
+            Conveyor.SubstractCollectibleBoxCount();
+            
+            uIManager.SetCollectedBoxesCount(collectedBoxesCount);
+            uIManager.SetCollectibleBoxesCount(Conveyor.collectibleBoxCount);
+            
         }
     }
 }

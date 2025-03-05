@@ -8,7 +8,18 @@ public class Conveyor : MonoBehaviour
     [SerializeField] private Transform spawnPoint;
     [SerializeField] private float spawnTime;
     [SerializeField] private float forceFactor = 2;
-
+    
+    [SerializeField] private UIManager uIManager;
+    
+    public static int collectibleBoxCount = 0;
+    public static void AddCollectibleBoxCount()
+    {
+        collectibleBoxCount++;
+    }
+    public static void SubstractCollectibleBoxCount()
+    {
+        collectibleBoxCount--;
+    }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnEnable()
@@ -28,6 +39,10 @@ public class Conveyor : MonoBehaviour
             {
                 Box box = boxes[Random.Range(0, boxes.Length)];
                 Instantiate(box, spawnPoint.position, spawnPoint.rotation);
+                
+                Conveyor.AddCollectibleBoxCount();
+                uIManager.SetCollectibleBoxesCount(Conveyor.collectibleBoxCount);
+                
                 yield return new WaitForSeconds(spawnTime);
                 
             } while (true);
